@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed');
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: #edf2f8;
+}
+.container {
+  width: 1110px;
+  margin: 165px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: repeat(2, 280px);
+  grid-column-gap: 35px;
+  grid-row-gap: 35px;
+}
+.testimonial {
+  border-collapse: separate; 
+  box-shadow: 0px 0px 50px -35px rgba(0,0,0,0.75);
+  border-radius: 5px;
+  padding: 25px 35px;
+}
+.test-1 { 
+  color: #fff;
+  background-color: #733fc8;
+  grid-area: 1 / 1 / 2 / 3; 
+  position: relative;
+}
+.test-2 { 
+  color: #fff;
+   background-color: #49556b;
+  grid-area: 1 / 3 / 2 / 4;
+}
+.test-3 { 
+  background-color: #fff;
+  grid-area: 1 / 4 / 3 / 5; 
+}
+.test-4 { 
+  background-color: #fff;
+  grid-area: 2 / 1 / 3 / 2; 
+}
+.test-5 { 
+  color: #fff;
+  background-color: #18202d;
+  grid-area: 2 / 2 / 3 / 4;
+}
+.test-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #a773ef;
+  display: inline-block;
+}
+.test-personal {
+  display: flex;
+  gap: 10px;
+}
+.test-box {
+  margin: auto 0;
+}
+.test-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+.test-role {
+  font-size: 12px;
+  opacity: 50%;
+}
+.test-title {
+  font-size: 17px;
+}
+.test-text {
+  font-size: 14px;
+  opacity: 50%;
+}
+.test-ornament {
+  position: absolute;
+  top: 0;
+  left: 65%;
+  z-index: 0;
+}
+.test-1 .test-personal, .test-1 .test-title {
+  position: relative;
+  z-index: 1
+}
+
+@media (max-width:730px) {
+  
+.container {
+  width: 330px;
+  max-width: 90vw;
+  margin: 60px auto;
+  display: block;
+}
+.testimonial {
+  margin-top: 25px;
+}
+.test-ornament {
+  left: 58%;    
+}
+  
+}
